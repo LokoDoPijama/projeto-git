@@ -1,5 +1,6 @@
 const btnImg = document.getElementById("btnImg");
-const rainbowImg = document.querySelector("img")
+const btnJungle = document.getElementById("btnJungle");
+const rainbowImg = document.querySelector("img");
 
 btnImg.addEventListener("click", function(){
 
@@ -10,5 +11,13 @@ btnImg.addEventListener("click", function(){
     document.body.insertBefore(br, rainbowImg);
 
     btnImg.style.display = 'none';
+
+})
+
+btnJungle.addEventListener("click", function(){
+
+    const btnClone = btnJungle.cloneNode(1);
+
+    document.body.appendChild(btnClone);
 
 })
